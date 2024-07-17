@@ -10,14 +10,15 @@ class MyApp extends StatelessWidget {
     const String appTitle = 'Severah Mshai Mwanyumba';
     return MaterialApp(
       title: appTitle,
+      debugShowCheckedModeBanner: false,  // This line removes the debug banner
       home: Scaffold(
         appBar: AppBar(
           title: const Text(appTitle),
         ),
         body: const SingleChildScrollView(
-        child: Column(
-        children: [
-          ImageSection(
+          child: Column(
+            children: [
+              ImageSection(
             image: 'images/dp.jpg',
           ),
         TitleSection(
